@@ -6,8 +6,8 @@ import SEO from '../components/seo'
 
 const Wrapper = styled.div`
   text-align: center;
-  margin-top: 120px;
   h1 {
+    margin-top: 120px;
     font-size: 5rem;
     font-weight: 300;
   }
