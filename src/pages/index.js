@@ -134,7 +134,7 @@ const IndexPage = ( data ) => (
           data-item-name="Book-1"
           data-item-price="3.00"
           data-item-weight="2.5"
-          data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
+          data-item-url="https://mona-lisas.netlify.com/"
           data-item-description="A good book"
         >
             Add
@@ -152,7 +152,7 @@ const IndexPage = ( data ) => (
           data-item-name="Book-2"
           data-item-price="4.00"
           data-item-weight="2.5"
-          data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
+          data-item-url="https://mona-lisas.netlify.com/"
           data-item-description="A good book"
         >
             Add
@@ -170,7 +170,7 @@ const IndexPage = ( data ) => (
           data-item-name="Book-3"
           data-item-price="5.00"
           data-item-weight="2.5"
-          data-item-url="https://pedantic-banach-caf9e2.netlify.com/"
+          data-item-url="https://mona-lisas.netlify.com/"
           data-item-description="A good book"
         >
             Add
