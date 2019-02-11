@@ -1,7 +1,9 @@
+/* eslint-disable react/require-default-props */
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -60,7 +62,14 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
+
+            <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWFhMzIyOGUtOTQwMC00YjdiLThlODItM2QyNDU1N2ZkNGFiNjM2NzM4NjIxODY1NDgxNjc0" />
+
+            <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          </Helmet>
         )
       }}
     />
