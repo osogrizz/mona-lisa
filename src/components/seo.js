@@ -63,9 +63,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           >
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-            <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWFhMzIyOGUtOTQwMC00YjdiLThlODItM2QyNDU1N2ZkNGFiNjM2NzM4NjIxODY1NDgxNjc0" />
+            <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWFhMzIyOGUtOTQwMC00YjdiLThlODItM2QyNDU1N2ZkNGFiNjM2NzM4NjIxODY1NDgxNjc0"></script>
 
             <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
             <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
