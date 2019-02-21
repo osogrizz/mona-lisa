@@ -1,8 +1,12 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
-    title: `CompanyName`,
-    description: `A display/Gallery of CompanyName products.`,
-    author: `Leo Torres leohtor@gmail.com`,
+    title: `Mona Lisa's Bookstore`,
+    description: `Online store for books and other knick-knacks.`,
+    author: `Leo Torres <leohtor@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +29,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-        apiKey: 'ZWFhMzIyOGUtOTQwMC00YjdiLThlODItM2QyNDU1N2ZkNGFiNjM2NzM4NjIxODY1NDgxNjc0',
+        apiKey: process.env.GATSBY_API_KEY,
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-santaFe`,
-        short_name: `starter`,
+        short_name: `Mona Lisa's`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#f3ebde`,
