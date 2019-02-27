@@ -5,6 +5,6 @@ title: Book Name
 author: Arthur Arthur
 desc: a book to read
 price: '12.00'
-imdb: akdsnakn2394u32k
+IMDB: akdsnakn2394u32k
 ---
 

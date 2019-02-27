@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import SEO from '../components/seo'
 
 const CardContainer = styled.div`
@@ -37,7 +37,6 @@ const FooterStyles = styled.footer`
     font-weight: 100;
   }
 `
-
 
 const Card = styled.div`
   margin: 20px;
@@ -123,7 +122,8 @@ class IndexPage extends Component {
           {data.allMarkdownRemark.edges.map( ({node}) => (
             <Card key={node.id} item={node} >
               {/* <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
-                <img src={node.frontmatter.thumbnail} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
+              {/* <Img fluid={node.frontmatter.thumbnail} /> */}
+                <img src={node.frontmatter.thumbnail} style={{ width: '200px', heigth: '200px', margin: '0 auto', marginTop: '10px' }} alt={node.frontmatter.title}/>
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
@@ -178,27 +178,10 @@ export const PageQuery = graphql`
           author
           desc
           price
-          imdb
+          IMDB
         }
       }
     }
   }
   }
 `
-
-// const Image = () => (
-//   <StaticQuery
-//     query={graphql`
-//       query {
-//         placeholderImage: file(relativePath: { eq: "main-img.jpg" }) {
-//           childImageSharp {
-//             fluid(maxWidth: 300) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-//   />
-// )
