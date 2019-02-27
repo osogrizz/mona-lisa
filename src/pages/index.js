@@ -175,9 +175,9 @@ export const PageQuery = graphql`
           thumbnail
           title
           author
-          desc
+          desc_
           price
-          IMDB
+          imdb
         }
       }
     }
