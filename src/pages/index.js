@@ -173,7 +173,6 @@ export const PageQuery = graphql`
         id
         frontmatter {
           thumbnail
-          path
           title
           author
           desc
