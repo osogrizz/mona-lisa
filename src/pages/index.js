@@ -122,7 +122,8 @@ class IndexPage extends Component {
         <CardContainer>
           {data.allMarkdownRemark.edges.map( ({node}) => (
             <Card key={node.id} item={node} >
-              <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
+              {/* <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
+                <img src={node.frontmatter.thumbnail} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
@@ -171,7 +172,7 @@ export const PageQuery = graphql`
       node {
         id
         frontmatter {
-          thumbnail
+          image
           path
           title
           author
