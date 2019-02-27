@@ -32,6 +32,7 @@ module.exports = {
         apiKey: process.env.GATSBY_API_KEY,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
