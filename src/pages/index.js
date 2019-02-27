@@ -121,13 +121,13 @@ class IndexPage extends Component {
         <CardContainer>
           {data.allMarkdownRemark.edges.map( ({node}) => (
             <Card key={node.id} item={node} >
-              {/* <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
+              {/* <Image fluid={node.frontmatter.thumbnail} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
               {/* <Img fluid={node.frontmatter.thumbnail} /> */}
-                <img src={node.frontmatter.thumbnail} style={{ width: '100%', heigth: '200px', margin: '0 auto', marginTop: '10px' }} alt={node.frontmatter.title}/>
+                <img src={node.frontmatter.thumbnail} style={{ width: '100%', maxHeigth: '300px', margin: '0 auto', marginTop: '10px' }} alt={node.frontmatter.title}/>
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
-                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc}</p>
+                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc_}</p>
                 <button
                   type="submit"
                   className="snipcart-add-item"

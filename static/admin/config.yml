@@ -5,7 +5,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "images"
+media_folder: "static/images"
 public_folder: "images"
 
 collections:
@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields: 
-      - {label: "Image", name: "thumbnail", required: true }
+      - {label: "Image", name: "thumbnail", widget: "string", required: true }
       - {label: "Title", name: "title", widget: "string", required: true }
       - {label: "Author", name: "author", widget: "string", required: true }
       - {label: "desc", name: "desc", widget: "string", required: false }
