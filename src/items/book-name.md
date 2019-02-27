@@ -5,6 +5,6 @@ title: Book Name
 author: Arthur Arthur
 desc.: something something
 price: '12.00'
-imdb: 'as,dand928347'
+imdb: asdand928347
 ---
 
