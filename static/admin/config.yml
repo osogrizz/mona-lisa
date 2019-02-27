@@ -3,6 +3,8 @@ backend:
   branch: master
   repo: osogrizz/mona-lisa
 
+publish_mode: editorial_workflow
+
 media_folder: "static/images"
 public_folder: "images"
 
