@@ -15,7 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields: 
-      - {label: "Image", name: "image", widget: "image", required: true }
+      - {label: "Image", name: "thumbnail", widget: "image", required: true }
       - {label: "Title", name: "title", widget: "string", required: true }
       - {label: "Author", name: "author", widget: "string", required: true }
       - {label: "Description", name: "desc.", widget: "string", required: false }
