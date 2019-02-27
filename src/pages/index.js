@@ -104,127 +104,6 @@ const Title = styled.h1`
   color: darkred;
 `
 
-// const IndexPage = ( data ) => (
-//   <Layout>
-//     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
-//     <Link to="/" style={{ textDecoration: 'none' }}>
-//       <Title>Mona Lisa's Books</Title>
-//       <div style={{ paddingTop: `5px`, margin: `0 auto`, maxWidth: `330px`, marginBottom: `1.45rem` }}>
-//         <Image />
-//       </div>
-//     </Link>
-//     <h4>So many books so little time...</h4>
-    
-//     <CardContainer>
-
-//       <Card>
-//         <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-//         <h3>Title: Book 1</h3>
-//         <p>Author: Book 1</p>
-//         <p>Price: $3.00</p>
-//         <button
-//           type="submit"
-//           className="snipcart-add-item"
-//           data-item-id="1"
-//           data-item-name="Book-1"
-//           data-item-price="3.00"
-//           data-item-weight="2.5"
-//           data-item-url="https://mona-lisas.netlify.com/"
-//           data-item-description="A good book"
-//         >
-//             Add
-//         </button>
-//       </Card>
-//       <Card>
-//         <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-//         <h3>Title: Book 2</h3>
-//         <p>Author: Book 2</p>
-//         <p>Price: $3.00</p>
-//         <button
-//           type="submit"
-//           className="snipcart-add-item"
-//           data-item-id="2"
-//           data-item-name="Book-2"
-//           data-item-price="4.00"
-//           data-item-weight="2.5"
-//           data-item-url="https://mona-lisas.netlify.com/"
-//           data-item-description="A good book"
-//         >
-//             Add
-//         </button>
-//       </Card>
-//       <Card>
-//         <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-//         <h3>Title: Book 3</h3>
-//         <p>Author: Book 3</p>
-//         <p>Price: $3.00</p>
-//         <button
-//           type="submit"
-//           className="snipcart-add-item"
-//           data-item-id="3"
-//           data-item-name="Book-3"
-//           data-item-price="5.00"
-//           data-item-weight="2.5"
-//           data-item-url="https://mona-lisas.netlify.com/"
-//           data-item-description="A good book"
-//         >
-//             Add
-//         </button>
-//       </Card>
-
-
-
-      
-//     </CardContainer>
-
-//       <CardContainer>
-//         {data.allMarkdownRemark.edges.map( ({node}) => (
-//           <Card key={node.id} item={node} >
-//              <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-//               <h3>Title: Book 3</h3>
-//               <p>Author: Book 3</p>
-//               <p>Price: $3.00</p>
-//               <button
-//                 type="submit"
-//                 className="snipcart-add-item"
-//                 data-item-id="3"
-//                 data-item-name="Book-3"
-//                 data-item-price="5.00"
-//                 data-item-weight="2.5"
-//                 data-item-url="https://mona-lisas.netlify.com/"
-//                 data-item-description="A good book"
-//               >
-//             Add
-//             </button>
-//           </Card> 
-//         ))}
-//       </CardContainer>
-
-//     <hr style={{ marginTop: '40px'}} />
-
-//     <FooterStyles>
-//       <div>
-//               Copyright © 
-//         {' '}
-//         {new Date().getFullYear()}
-//         ,  Mona Lisa's Books - All Rights Reserved
-//       </div>
-
-//       <div style={{ textAlign: 'right', }}>
-//         <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
-//       </div>
-//     </FooterStyles>
-//   </Layout>
-// )
-
-
-
-
-  
-
-
-
 class IndexPage extends Component {
   render() {
     const { data } = this.props
@@ -239,76 +118,15 @@ class IndexPage extends Component {
         </div>
       </Link>
       <h4>So many books so little time...</h4>
-      
-      {/* <CardContainer>
-
-        <Card>
-          <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-          <h3>Title: Book 1</h3>
-          <p>Author: Book 1</p>
-          <p>Price: $3.00</p>
-          <button
-            type="submit"
-            className="snipcart-add-item"
-            data-item-id="1"
-            data-item-name="Book-1"
-            data-item-price="3.00"
-            data-item-weight="2.5"
-            data-item-url="https://mona-lisas.netlify.com/"
-            data-item-description="A good book"
-          >
-              Add
-          </button>
-        </Card>
-        <Card>
-          <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-          <h3>Title: Book 2</h3>
-          <p>Author: Book 2</p>
-          <p>Price: $3.00</p>
-          <button
-            type="submit"
-            className="snipcart-add-item"
-            data-item-id="2"
-            data-item-name="Book-2"
-            data-item-price="4.00"
-            data-item-weight="2.5"
-            data-item-url="https://mona-lisas.netlify.com/"
-            data-item-description="A good book"
-          >
-              Add
-          </button>
-        </Card>
-        <Card>
-          <Img fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
-          <h3>Title: Book 3</h3>
-          <p>Author: Book 3</p>
-          <p>Price: $3.00</p>
-          <button
-            type="submit"
-            className="snipcart-add-item"
-            data-item-id="3"
-            data-item-name="Book-3"
-            data-item-price="5.00"
-            data-item-weight="2.5"
-            data-item-url="https://mona-lisas.netlify.com/"
-            data-item-description="A good book"
-          >
-              Add
-          </button>
-        </Card>
-
-
-
-        
-      </CardContainer> */}
 
         <CardContainer>
           {data.allMarkdownRemark.edges.map( ({node}) => (
             <Card key={node.id} item={node} >
               <Image fluid={data.card} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} />
                 <h3>{node.frontmatter.title}</h3>
-                <p>{node.frontmatter.author}</p>
-                <p>{node.frontmatter.price}</p>
+                <p>Author: {node.frontmatter.author}</p>
+                <p>Price: ${node.frontmatter.price}</p>
+                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc}</p>
                 <button
                   type="submit"
                   className="snipcart-add-item"
@@ -348,7 +166,6 @@ export default IndexPage
 
 export const PageQuery = graphql`
   query ItemListQuery {
-    
     allMarkdownRemark{
     edges {
       node {
@@ -358,7 +175,7 @@ export const PageQuery = graphql`
           path
           title
           author
-          desc_
+          desc
           price
           imdb
         }
