@@ -31,17 +31,17 @@ const Image = () => (
 )
 export default Image
 
-export const ImageQuery = graphql`
-  query ItemImageQuery {
-    allMarkdownRemark{
-    edges {
-      node {
-        id
-        frontmatter {
-          thumbnail
-        }
-      }
-    }
-  }
-  }
-`
+// export const ImageQuery = graphql`
+//   query ItemImageQuery {
+//     allMarkdownRemark{
+//     edges {
+//       node {
+//         id
+//         frontmatter {
+//           thumbnail
+//         }
+//       }
+//     }
+//   }
+//   }
+// `
