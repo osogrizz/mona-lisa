@@ -39,6 +39,13 @@ module.exports = {
         apiKey: process.env.GATSBY_API_KEY,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'item',
+        path: `${__dirname}/src/items`,
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
