@@ -198,6 +198,25 @@ const IndexPage = ( data ) => (
 )
 
 export default IndexPage
+
+// export const PageQuery = graphql`
+//   query ItemListQuery {
+//     allMarkdownRemark(
+//       sort: { fields: [frontmatter___date], order: DESC }
+//       filter: { frontmatter: { published: { eq: true} }}
+//     ) {
+//     edges {
+//       node {
+//         id
+//         frontmatter {
+//           title
+//           path
+//         }
+//       }
+//     }
+//   }
+//   }
+// `
   
 
 // export const query = graphql`
