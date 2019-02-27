@@ -1,0 +1,20 @@
+backend: 
+  name: github
+  branch: master
+
+media_folder: "static/images"
+public_folder: "images"
+
+collections:
+  - label: "BookItems"
+    name: "book-items"
+    folder: "src/items"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Image", name: "thumbnail", widget: "image", required: true }
+      - {label: "Title", name: "title", widget: "string", required: true }
+      - {label: "Author", name: "author", widget: "string", required: true }
+      - {label: "Description", name: "desc.", widget: "string", required: false }
+      - {label: "Price", name: "price", widget: "string", required: true }
+      - {label: "IMDB", name: "imdb", widget: "string", required: true }
