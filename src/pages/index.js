@@ -135,7 +135,7 @@ class IndexPage extends Component {
                   data-item-price={node.frontmatter.price}
                   data-item-weight="2.5"
                   data-item-url="https://mona-lisas.netlify.com/"
-                  data-item-description={node.frontmatter.description}
+                  data-item-description={node.frontmatter.desc}
                 >
               Add
               </button>
