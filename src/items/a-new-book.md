@@ -1,6 +1,6 @@
 ---
 thumbnail: >-
-  https://raw.githubusercontent.com/osogrizz/mona-lisa/master/static/images/06njslexrkg-vwio0fasiw.jpg?token=AJxd32E8KV0aVRy6U2olzJrT2G4CdCnwks5cdyM5wA%3D%3D
+  https://raw.githubusercontent.com/osogrizz/mona-lisa/master/static/images/06njslexrkg-vwio0fasiw.jpg?token=AJxd30St4n6Q_8tU0oZX37cSterMnHHcks5cdzxbwA%3D%3D
 title: A NEW BOOK
 author: chum
 desc: asdjna
