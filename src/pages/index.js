@@ -11,6 +11,7 @@ import SEO from '../components/seo'
 const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -39,6 +40,7 @@ const FooterStyles = styled.footer`
 `
 
 const Card = styled.div`
+  width: 250px;
   margin: 20px;
   text-align: center;
   overflow: hidden;
@@ -69,7 +71,7 @@ const Card = styled.div`
     margin: 20px;
     border: 1px solid #fff;
     background: #7df442;
-    width: 80px;
+    width: 90px;
     /* padding: 5px; */
     border-radius: 5px;
     color: #fff;
