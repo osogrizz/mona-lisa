@@ -157,7 +157,7 @@ class IndexPage extends Component {
         </div>
 
         <div style={{ textAlign: 'right', }}>
-          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+          <a href="https://leo-torres.tech" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
         </div>
       </FooterStyles>
     </Layout>
