@@ -46,7 +46,9 @@ module.exports = {
         path: `${__dirname}/src/items`,
       }
     },
-    `gatsby-remark-relative-images`,
+    {
+      resolve: `gatsby-remark-relative-images`,
+    },
     {
       resolve: `gatsby-remark-images`,
       options: {
