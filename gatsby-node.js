@@ -1,5 +1,6 @@
-// const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+// gatsby-node.js
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
-// exports.onCreateNode = ({ node }) => {
-//   fmImagesToRelative(node);
-// };
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
+};
