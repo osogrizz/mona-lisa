@@ -21,4 +21,4 @@ collections:
       - {label: "desc", name: "desc_", widget: "string", required: false }
       - {label: "Price", name: "price", widget: "string", required: true }
       - {label: "imbd", name: "imdb", widget: "string", required: true }
-      - {label: "path", name: "path", widget: "path", required: true }
+      # - {label: "path", name: "path", widget: "path", required: true }
