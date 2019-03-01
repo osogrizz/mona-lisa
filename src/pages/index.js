@@ -53,6 +53,8 @@ const Card = styled.div`
   h3 {
     margin-top: 0.4rem;
     font-weight: 400;
+    text-transform: capitalize;
+    /* letter-spacing: 1.03px; */
   }
 
   p {
@@ -126,7 +128,7 @@ class IndexPage extends Component {
             <Card key={node.id} item={node} >
               {/* <Image fluid={node.frontmatter.thumbnail} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
               {/* <Img fluid={node.frontmatter.thumbnail} /> */}
-                <img src={node.frontmatter.thumbnail} style={{ width: '100%', margin: '0 auto' }} alt={node.frontmatter.title}/>
+                <img src={node.frontmatter.thumbnail} style={{ width: '100%', margin: '0' }} alt={node.frontmatter.title}/>
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
