@@ -129,7 +129,7 @@ class IndexPage extends Component {
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
-                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc}</p>
+                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.description}</p>
                 <button
                   type="submit"
                   className="snipcart-add-item"
@@ -138,7 +138,7 @@ class IndexPage extends Component {
                   data-item-price={node.frontmatter.price}
                   data-item-weight="2.5"
                   data-item-url="https://mona-lisas.netlify.com/"
-                  data-item-description={node.frontmatter.desc}
+                  data-item-description={node.frontmatter.description}
                 >
               Add
               </button>
@@ -177,7 +177,7 @@ export const PageQuery = graphql`
           thumbnail 
           title
           author
-          desc
+          description
           price
           imdb
         }
