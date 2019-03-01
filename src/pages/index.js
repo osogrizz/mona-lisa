@@ -129,7 +129,7 @@ class IndexPage extends Component {
                 <h3>{node.frontmatter.title}</h3>
                 <p>Author: {node.frontmatter.author}</p>
                 <p>Price: ${node.frontmatter.price}</p>
-                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc_}</p>
+                <p style={{ fontSize: '11px' }}>desc: {node.frontmatter.desc}</p>
                 <button
                   type="submit"
                   className="snipcart-add-item"
@@ -177,7 +177,7 @@ export const PageQuery = graphql`
           thumbnail 
           title
           author
-          desc_
+          desc
           price
           imdb
         }
