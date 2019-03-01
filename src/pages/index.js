@@ -8,7 +8,16 @@ import Image from '../components/image'
 // import Img from 'gatsby-image'
 import SEO from '../components/seo'
 
+const Title = styled.h1`
+  text-align: center;
+  /* font-family: 'Sacramento', cursive; */
+  font-size: 62px;
+  font-weight: 200;
+  color: darkred;
+`
+
 const CardContainer = styled.div`
+  margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
@@ -25,23 +34,9 @@ const CardContainer = styled.div`
   }
 `
 
-const FooterStyles = styled.footer`
-  margin: 0 auto;
-  max-width: 950px;
-  font-size: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 100;
-  }
-`
-
 const Card = styled.div`
   width: 250px;
-  margin: 20px;
+  margin: 20px auto;
   text-align: center;
   overflow: hidden;
   border-radius: 4px;
@@ -97,12 +92,18 @@ const Card = styled.div`
   }
 `
 
-const Title = styled.h1`
-  text-align: center;
-  /* font-family: 'Sacramento', cursive; */
-  font-size: 62px;
-  font-weight: 200;
-  color: darkred;
+const FooterStyles = styled.footer`
+  margin: 0 auto;
+  max-width: 950px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 100;
+  }
 `
 
 class IndexPage extends Component {
@@ -114,10 +115,10 @@ class IndexPage extends Component {
 
       <Link to="/" style={{ textDecoration: 'none' }}>
         <Title>Mona Lisa's Books</Title>
-        <div style={{ paddingTop: `5px`, margin: `0 auto`, maxWidth: `330px`, marginBottom: `1.45rem` }}>
+      </Link>
+        <div style={{ paddingTop: `5px`, margin: `0 auto`, maxWidth: `330px`, marginBottom: `2.45rem` }}>
           <Image />
         </div>
-      </Link>
       <h4>So many books so little time...</h4>
 
         <CardContainer>
