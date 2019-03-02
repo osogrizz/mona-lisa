@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 // import Img from 'gatsby-image'
 import SEO from '../components/seo'
+// import ProductImage from '../components/product-image';
 
 const Title = styled.h1`
   text-align: center;
@@ -126,7 +127,7 @@ class IndexPage extends Component {
         <CardContainer>
           {data.allMarkdownRemark.edges.map( ({node}) => (
             <Card key={node.id} item={node} >
-              {/* <Image fluid={node.frontmatter.thumbnail} style={{ width: '200px', margin: '0 auto', marginTop: '10px' }} /> */}
+              {/* <ProductImage alt={node.id}/> */}
               {/* <Img fluid={node.frontmatter.thumbnail} /> */}
                 <img src={node.frontmatter.thumbnail} style={{ width: '100%', margin: '0' }} alt={node.frontmatter.title}/>
                 <h3>{node.frontmatter.title}</h3>
@@ -173,19 +174,25 @@ export default IndexPage
 export const PageQuery = graphql`
   query ItemListQuery {
     allMarkdownRemark{
-    edges {
-      node {
-        id
-        frontmatter {
-          thumbnail 
-          title
-          author
-          desc_
-          price
-          imdb
+      edges {
+        node {
+          id
+          frontmatter {
+            thumbnail 
+            #   childImageSharp {
+            #     fluid(maxWidth: 300, quality: 100) {
+            #       ...GatsbyImageSharpFluid
+            #     }
+            #   }
+            # } 
+            title
+            author
+            desc_
+            price
+            imdb
+          }
         }
       }
     }
-  }
   }
 `
